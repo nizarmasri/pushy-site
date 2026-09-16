@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Pushy Privacy Policy</title>
+<meta name="description" content="How Pushy, the pushup game, collects, uses and protects your data.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="Pushy icon">
+    <div class="brand">Pushy <span>Do pushups to fly the bird</span></div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective 16 September 2026 · Applies to the Pushy app for iOS and Android</p>
+
+  <p>Pushy is a game that turns pushups into gameplay. Your phone's front camera watches your upper body while you do pushups, and a bird on screen follows your chest through the pipes. This policy explains what data Pushy handles, where it goes, and what stays on your phone. We keep it short because we collect very little.</p>
+
+  <div class="card">
+    <h3>The short version</h3>
+    <ul>
+      <li><strong>The camera is processed on your phone.</strong> Pose tracking runs on the device. Camera frames are never sent to us during play.</li>
+      <li><strong>No email, no phone number, no real name.</strong> An account is a username and a 6-digit PIN.</li>
+      <li><strong>Video leaves your phone only when you tap Share.</strong> Same for challenge photos: they are uploaded only when you add them.</li>
+      <li><strong>No ads, no ad tracking, no analytics SDKs.</strong></li>
+      <li><strong>You can delete your account from Settings</strong> and everything tied to it is removed.</li>
+    </ul>
+  </div>
+
+  <h2>1. Camera and pose tracking</h2>
+  <p>Pushy needs the front camera to work. While you play, camera frames are analysed on your device by an on-device pose detection model to find your shoulders and estimate how far you have lowered your body. Only that position signal drives the bird. Frames are not stored, not uploaded, and not used for anything other than gameplay.</p>
+  <p>During a run, the app may also record a short video of the session locally so that you can create a replay afterwards. That recording stays on your phone and is discarded unless you choose to share it (see section 3).</p>
+
+  <h2>2. Your account</h2>
+  <p>To save scores, keep a streak and appear on leaderboards you create an account with a <strong>username</strong> and a <strong>6-digit PIN</strong>. We do not ask for an email address, phone number or name. The PIN is stored only as a salted argon2id hash and cannot be recovered; if you forget it, the account cannot be restored.</p>
+  <p>You may pick an avatar emoji. Your username and avatar are visible to other players on leaderboards, in follow lists and in challenges.</p>
+
+  <h2>3. What we store on our servers</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Who can see it</th></tr>
+    <tr><td>Username, avatar emoji, PIN hash</td><td>Sign in, identify you to other players</td><td>Username and avatar: other players. PIN hash: nobody, it is not reversible.</td></tr>
+    <tr><td>Daily scores, best scores, streak and shield status</td><td>Leaderboards, streaks, your history</td><td>Other players, via leaderboards and follows</td></tr>
+    <tr><td>Run replay data (bird position over time)</td><td>Verify a score matches the day's level and render replay videos</td><td>Only you</td></tr>
+    <tr><td>Who you follow and who follows you</td><td>Friends leaderboard</td><td>You and the players involved</td></tr>
+    <tr><td>Challenge membership and optional before/after photos</td><td>30-day challenges</td><td>Only you, unless you share them</td></tr>
+    <tr><td>Replay videos you choose to share</td><td>Render the shareable video with the game overlay</td><td>You, and anyone you send the finished video to</td></tr>
+    <tr><td>Session tokens, IP address and request logs</td><td>Keep you signed in, prevent abuse and rate-limit sign-in attempts</td><td>Nobody outside our infrastructure</td></tr>
+  </table>
+
+  <h2>4. Videos and photos</h2>
+  <p>Nothing recorded by the camera is uploaded automatically. When you tap <strong>Share replay</strong>, the video of that run is uploaded to our server, combined with the game overlay, and the finished clip is returned to your phone for you to post wherever you like. The uploaded source and rendered file are stored so that you can download the clip again; they are deleted when you delete your account.</p>
+  <p>Challenge before/after photos are optional and are uploaded only when you add them. They are private to you.</p>
+
+  <h2>5. What we do not do</h2>
+  <ul>
+    <li>We do not show ads or use advertising identifiers.</li>
+    <li>We do not include third-party analytics, crash reporting or tracking SDKs.</li>
+    <li>We do not sell, rent or trade your data.</li>
+    <li>We do not use your videos or photos to train models, for marketing, or for anything except producing the clip you asked for.</li>
+    <li>We do not read your contacts, location, health data or photo library. Saving a clip to your library happens only when you tap Save.</li>
+  </ul>
+
+  <h2>6. Service providers</h2>
+  <p>Our API and database run on <a href="https://railway.com" rel="noopener">Railway</a>. Your data is stored there, encrypted in transit (HTTPS) and at rest. Railway processes data on our behalf and does not use it for its own purposes. On-device pose detection uses Google ML Kit, which runs entirely on your phone and does not send frames to Google.</p>
+
+  <h2>7. Retention and deletion</h2>
+  <ul>
+    <li><strong>Sessions</strong> expire after 90 days without use, or immediately when you log out or change your PIN.</li>
+    <li><strong>Account data</strong> (scores, streaks, follows, challenges, photos, videos) is kept while your account exists.</li>
+    <li><strong>Deleting your account</strong> from Settings removes your user record, scores, follows, sessions, challenge memberships, photos and stored videos. The username becomes available again. Deletion is immediate and cannot be undone.</li>
+    <li><strong>Server logs</strong> containing IP addresses are kept for a short period for security and are then discarded.</li>
+  </ul>
+
+  <h2>8. Children</h2>
+  <p>Pushy is not directed at children under 13, and we do not knowingly collect personal information from them. Because we do not collect an email or name, we cannot verify age; if you believe a child under 13 has created an account, contact us and we will delete it.</p>
+
+  <h2>9. Your rights</h2>
+  <p>Depending on where you live you may have the right to access, correct, export or delete your personal data. Almost everything Pushy holds about you is visible in the app, and deletion is self-service in Settings. For anything else, email us and we will respond within 30 days.</p>
+
+  <h2>10. Changes</h2>
+  <p>If this policy changes in a way that matters, we will update the date at the top and note the change in the app. Continued use after a change means you accept the updated policy.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions, deletion requests or anything else: <a href="mailto:nizarmasri37@gmail.com">nizarmasri37@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">Home &amp; support</a> · <a href="privacy.html">Privacy policy</a><br>
+    © 2026 Nizar Masri
+  </footer>
+</main>
+</body>
+</html>
